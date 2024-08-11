@@ -1,0 +1,20 @@
+.Stickbar{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    background-color: #fafafa;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    &:global{
+
+        & > .navbar{
+            gap: 9px;
+            display: flex;
+            justify-content:space-between;
+        }
+        & > .sign-in{
+        }
+    }
+}
