@@ -15,6 +15,22 @@ export default function Home() {
             Phone="(66) 9999-999"
             rating={2.3}
           />
+          <Card
+            imgSrc={barberimg}
+            titleHead="Barber Shop"
+            adress="Rua Jose Mia Pica, 206, Tupiniquin - Tribufu"
+            insta="@Barbershop"
+            Phone="(66) 9999-999"
+            rating={2.3}
+          />
+          <Card
+            imgSrc={barberimg}
+            titleHead="Barber Shop"
+            adress="Rua Jose Mia Pica, 206, Tupiniquin - Tribufu"
+            insta="@Barbershop"
+            Phone="(66) 9999-999"
+            rating={2.3}
+          />
           <div className="card"></div>
         </main>
       </div>

@@ -9,50 +9,20 @@ export default function Card(inf: {
   rating: number;
 }) {
   return (
-    <div
-      className={styled.card}
-    >
-      <div className="card__header">
-        <img src={inf.imgSrc} alt="sample1" />
-      </div>
-      <div className="card__body">
-        <span className="card__body__date">Unidade</span>
-        <h1 className="card__body__head">{inf.titleHead}</h1>
-        <Rating
-          name="half-rating-read"
-          value={inf.rating}
-          precision={0.1}
-          sx={{
-            color: '#1f2628',
-          }}
-          readOnly
-        />
-        <p className="card__body__content">{inf.adress}</p>
-      </div>
-      <div className="card__footer">
-        <div className="card__Footer__first">
-          <div>
-            <p>
-              <i className="fa-brands fa-instagram"></i>
-            </p>
-          </div>
-          <label>{inf.insta}</label>
+    <div className={styled.card}>
+      <div className="divImg">
+        <img src={inf.imgSrc} alt="" />
+        <div className="divRating">
+          <Rating name="read-only" defaultValue={1} max={1} readOnly />
+          <p>4.5</p>
         </div>
-        <div className="card__Footer__second">
-          <div>
-            <p>
-              <i className="fa-solid fa-phone"></i>
-            </p>
-          </div>
-          <label>{inf.Phone}</label>
-        </div>
-        <div className="card__Footer__third">
-          <div>
-            <p>
-              <i className="fa-regular fa-calendar-check"></i>
-            </p>
-          </div>
-          <label>Agende já</label>
+      </div>
+      <div className="divInfo">
+        <h2>{inf.titleHead}</h2>
+        <p>{inf.adress}</p>
+        <div className="divLocation">
+          <i className="fa-solid fa-location-dot"></i>
+          <p> 1 Km de distância</p>
         </div>
       </div>
     </div>
